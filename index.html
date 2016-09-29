@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <meta charset="utf-8">
     <title>Accessibility Forms</title>
@@ -16,27 +16,28 @@
     <div class="content">
       <h1>Application form</h1>
 
+      <fieldset>
       <form action="" method="post" name="form1" id="form1">
       <p>1. Personal Details</p>
-      <p>Name:
+      <p><label for='textfield'>Name:</label>
       <input type="text" id="textfield"></p>
 
-      <p>Phone Number:
+      <p><label for='textfield3'>Phone Number:</label>
       <input type="text" id="textfield3"></p>
 
-      <p>Date of Birth:
+      <p><label for='textfield2'>Date of Birth:</label>
       <input type="text" tabindex="-1" id="textfield2"></p>
 
-      <p><label for="textfield4">First Name:
+      <p><label for="textfield4">First Name:</label>
       <input type="text" id="textfield4"></p>
 
-      <p>Last Name:
+      <p><label for='textfield5'>Last Name:</label>
       <input type="text" tabindex="4" id="textfield5"></p>
 
       <p><label for="address">Address:</label>
-      <input type="text"></p>
+      <input type="text" id='address'></p>
 
-      <p>State:
+      <p><label for='state'>State:</label>
        <select id="state">
         <option value="0">Select</option>
         <option value="Arizona">Arizona</option>
@@ -49,25 +50,28 @@
         <option value="Wyoming">Wyoming</option>
       </select>
       </p>
+      </fieldset>
 
       <fieldset>
       <legend>2. Emergency Contact</legend>
-      <p><label>Name:</label>
+      <p><label for='textfield13'>Name:</label>
       <input type="text" id="textfield13"></p>
 
-      <p><label>Address:</label>
+      <p><label for='textfield14'>Address:</label>
       <input type="text" id="textfield14"></p>
 
-      <p><label>State</label>
+      <p><label for='textfield15'>State</label>
       <input type="text" id="textfield15"></p>
 
-      <p><label>Telephone:</label>
+      <p><label for='textfield16'>Telephone:</label>
       <input type="text" id="textfield16"></p>
       </fieldset>
 
+      <fieldset>
       <p>3. Citizenship</p>
       <p><input type="radio">United States</p>
       <p><input type="radio">Canada</p>
+      </fieldset>
 
       <p><input type="submit" value="Submit" id="button" name="button"></p>
       </form>
