@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <meta charset="utf-8">
     <title>Accessibility Tables</title>
@@ -21,14 +21,14 @@
       <table>
         <tbody><tr>
           <td> </td>
-          <td><b>Monday</b></td>
-          <td><b>Tuesday</b></td>
-          <td><b>Wednesday</b></td>
-          <td><b>Thursday</b></td>
-          <td><b>Friday</b></td>
+          <td><strong>Monday</strong></td>
+          <td><strong>Tuesday</strong></td>
+          <td><strong>Wednesday</strong></td>
+          <td><strong>Thursday</strong></td>
+          <td><strong>Friday</strong></td>
         </tr>
         <tr>
-          <td><b>8:00-9:00</b></td>
+          <td><strong>8:00-9:00</strong></td>
           <td>Breakfast with Bob</td>
           <td> </td>
           <td> </td>
@@ -36,7 +36,7 @@
           <td> </td>
         </tr>
         <tr>
-          <td><b>9:00-10:00</b></td>
+          <td><strong>9:00-10:00</strong></td>
           <td> </td>
           <td> </td>
           <td>Meeting with Stewart</td>
@@ -49,30 +49,30 @@
       <table>
         <caption><h2>Table 2</h2></caption>
         <thead><tr>
-          <th scope="col">Time</td>
-          <th scope="col">Monday</th>
-          <th scope="col">Tuesday</th>
-          <th scope="col">Wednesday</th>
-          <th scope="col">Thursday</th>
-          <th scope="col">Friday</th>
+          <th id='time' scope="col">Time</td>
+          <th id='monday' scope="col">Monday</th>
+          <th id='tuesday' scope="col">Tuesday</th>
+          <th id='wednesday' scope="col">Wednesday</th>
+          <th id='thursday' scope="col">Thursday</th>
+          <th id='friday' scope="col">Friday</th>
         </tr>
         </thead><tr>
         <tbody><tr>
         <tr>
-          <th scope="row">8:00-9:00</th>
-          <td>Breakfast with Bob</td>
+          <th id='8' scope="row">8:00-9:00</th>
+          <td headers='8 monday'>Breakfast with Bob</td>
           <td> </td>
           <td> </td>
           <td> </td>
           <td> </td>
         </tr>
         <tr>
-          <th scope="row">9:00-10:00</th>
+          <th id='9' scope="row">9:00-10:00</th>
           <td> </td>
           <td> </td>
-          <td>Meeting with Stewart</td>
-          <td>Run errands</td>
-          <td>Walk the dog</td>
+          <td headers='9 wednesday'>Meeting with Stewart</td>
+          <td headers='9 thursday'>Run errands</td>
+          <td headers='9 friday'>Walk the dog</td>
         </tr>
       </tbody></table>
       <br />

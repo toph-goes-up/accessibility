@@ -43,6 +43,6 @@ th, td {
 }
 
 #cell1 {background-color: #fff}
-#cell2 {background-color: #E8E7ED; color:#FFFEC9;}
+#cell2 {background-color: #000000; color:#FFFEC9;}
 #cell3 {background-color: #000000; color:#ffffff;}
-#cell4 {background-color: #283A00}
+#cell4 {background-color: #283A00; color: tomato;}
